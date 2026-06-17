@@ -1,0 +1,174 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>休假管理系統</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg1:#667eea;
+    --bg2:#764ba2;
+    --sync:#00c896;
+    --setting:#4f8cff;
+    --test:#ff9f43;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Noto Sans TC',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:28px;
+    padding:35px 25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+}
+
+.logo{
+    text-align:center;
+    color:#fff;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    font-size:2rem;
+    margin-bottom:8px;
+}
+
+.logo p{
+    opacity:.85;
+    font-size:.95rem;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    padding:18px 22px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:1.15rem;
+    font-weight:700;
+    transition:.25s;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.icon{
+    font-size:1.5rem;
+}
+
+.sync{
+    background:linear-gradient(135deg,#00d9a6,var(--sync));
+}
+
+.setting{
+    background:linear-gradient(135deg,#69a8ff,var(--setting));
+}
+
+.test{
+    background:linear-gradient(135deg,#ffbb66,var(--test));
+}
+
+.footer{
+    margin-top:25px;
+    text-align:center;
+    color:rgba(255,255,255,.85);
+    font-size:.85rem;
+}
+
+@media (max-width:480px){
+
+    .card{
+        padding:28px 20px;
+    }
+
+    .logo h1{
+        font-size:1.7rem;
+    }
+
+    .btn{
+        font-size:1rem;
+        padding:16px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="logo">
+        <h1>📅 休假管理系統</h1>
+        <p>快速存取常用功能</p>
+    </div>
+
+    <div class="menu">
+
+        <a class="btn sync"
+           href="https://hankdid13351.app.n8n.cloud/form/offdays"
+           target="_blank">
+            <span class="icon">🔄</span>
+            <span>同步</span>
+        </a>
+
+        <a class="btn setting"
+           href="https://docs.google.com/spreadsheets/d/1TjMms2BHTs2THA-UW7dfot-7Z_ghjgcdb7nrq0nQ-MM/edit?usp=sharing"
+           target="_blank">
+            <span class="icon">⚙️</span>
+            <span>設定</span>
+        </a>
+
+        <a class="btn test"
+           href="https://hankdid1335.github.io/off_days/index.html"
+           target="_blank">
+            <span class="icon">🧪</span>
+            <span>測試</span>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Off Days Management
+    </div>
+
+</div>
+
+</body>
+</html>
+```
